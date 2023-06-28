@@ -1,0 +1,606 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    height: 70px;
+    background-color: black;
+}
+.lo_img {
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
+.about_panner {
+    height: 90vh;
+    padding: 0px !important;
+    background-image: url(images/ertiga.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%!important;
+    background-position-y: bottom !important ;
+    position: relative;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.about_panner::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background-color: rgb(27, 26, 26);
+    color: white;
+    opacity: 0.7;
+    font-size: 34px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-link{
+    color: white !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px !important;
+    letter-spacing: 1px !important;
+}
+.logo {
+    color: white !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px !important;
+}
+
+/*============about_page==========*/
+.about_page {
+    height: 70vh;
+}
+.about_page_inner {
+    height: 100%;
+}
+.about_page_card {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: none !important;
+}
+.about_page_card h1 {
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.about_page_card span {
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+.about_page_card p {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-align: center;
+    opacity: 0.8;
+    width: 90%;
+}
+
+/*=========what_we_offer===========*/
+
+.what_we_offer {
+    height: 100vh;
+    background-color: black;
+}
+.what_we_offer_inner {
+    height: 100%;
+    padding: 0px !important;
+}
+.what_we_offer_inner_row {
+    height: 75%;
+    margin: 70px auto !important;
+}
+.what_we_offer_inner_row_box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.what_we_offer_inner h1 {
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 70px;
+    color: white;
+}
+.what_we_offer_inner_row_box_card {
+    height: 75% !important;
+    background-color: #1F1A1A !important;
+    border-radius: 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 90% !important;
+}
+.what_we_offer_inner_row_box_card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    background-color: transparent;
+}
+.what_we_offer_inner_row_box_card h4 {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+.what_we_offer_inner_row_box_card p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+    line-height: 30px;
+    width: 90%;
+    text-align: center;
+    opacity: 0.8;
+}
+
+/*=============call_us==============*/
+
+.call_us {
+    height: 40vh;
+}
+.call_us_inner {
+    height: 100%;
+    padding: 0px !important;
+}
+.call_us_inner_box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.call_us_inner_box h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+}
+.call_us_inner_box a {
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px 80px;
+}
+
+/*==============footer_section==============*/
+
+.footer_section {
+    height: 70vh;
+    background-color: #070707;
+}
+.footer_section_inner {
+    height: 100%;
+}
+.footer_section_inner_row {
+    color: white;
+    height: 100%;
+}
+.footer_section_inner_row_box {
+    height: 100%;
+    padding-top: 90px;
+}
+.footer_section_inner_row_box_card h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    height: 70px;
+}
+.footer_section_inner_row_box_card p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding-top: 20px;
+    width: 90%;
+}
+.footer_section_inner_row_box_card ul {
+    padding-top: 20px;
+    text-align: left;
+}
+.footer_section_inner_row_box_card ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+.footer_section_inner_row_box_card ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+.footer_section_inner_row_box_card {
+    background-color: transparent !important;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.footer_section_inner_row_box_card span {
+    text-align: center;
+    padding-top: 20px;
+}
+.footer_section_inner_row_box_card img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.footer_img {
+    width: 100px !important;
+    height: 70px !important;
+    object-fit: contain !important;
+}
+
+/*========last_footer=========*/
+
+.last_footer {
+    height: 10vh;
+    background-color: #1F1A1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.last_footer h1 {
+    font-size: 18px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+
+/*===========index page package style=============*/
+
+.package_img {
+    background-color: transparent !important;
+    gap: 40px !important;
+}
+.package_img img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+.home_panner h1 {
+    font-size: 40px;
+    color: white;
+    opacity: 1;
+    z-index: 10;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.home_panner a {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: #070707;
+    padding: 10px 80px;
+    z-index: 10;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+}
+/*============package_panner style change =========*/
+
+
+.tour_packages {
+    height: 120vh;
+}
+.tour_packages_inner {
+    height: 100%;
+}
+.tour_packages_inner_row {
+    height: 30%;
+    margin-bottom: 20px;
+}
+.tour_packages_inner_row_box {
+    height: 100%;
+    padding: 0px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tour_packages_inner_row_box_left {
+    height: 100% !important;
+    width: 40% !important;
+    border: none !important;
+    border-radius: 0px !important;
+}
+.tour_packages_inner_row_box_left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tour_packages_inner_row_box_right {
+    height: 100% !important;
+    width: 60% !important;
+    border: none !important;
+    border-radius: 0px !important;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 90px;
+    gap: 20px;
+}
+.tour_packages_inner_row_box_right h1 {
+    font-size: 24px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.tour_packages_inner_row_box_right p {
+    font-size: 18px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    width: 80%;
+}
+.tour_packages_inner_row_box_right a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: black;
+    font-size: 18px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*=============contact_page  style ===============*/
+
+.contact_page_inner h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 700;
+}
+.form-horizontal {
+    margin: 40px auto !important;
+    height: 80% !important;
+}
+.form-group {
+    height: 100px;
+}
+.input_text {
+    height: 75% !important;
+    width: 100% !important;
+}
+.form-control {
+    height: 100%;
+    border-radius: 0px !important;
+    border: 2px solid black !important;
+    width: 100% !important;
+}
+.form-control:focus {
+    box-shadow: none !important;
+}
+.form-control::placeholder {
+    font-size: 18px !important;
+    font-family: 'Poppins', sans-serif !important;
+    letter-spacing: 1px;
+}
+.submit_btn {
+    font-size: 18px !important;
+    font-family: 'Poppins', sans-serif !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    font-weight: 700 !important;
+    background-color: #070707 !important;
+    padding: 15px 60px !important;
+}
+
+/*=========location============*/
+
+.location {
+    height: 50vh;
+}
+.map_location {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media only screen and (max-width:480px) {
+    .navbar {
+        padding: 0px !important;
+    }
+    .navbar-toggler {
+        background-color: white !important;
+    }
+    .navbar-collapse {
+        background-color: black !important;
+        width: 100% !important;
+        padding-left: 30px !important;
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+        margin-top: 0px !important;
+    }
+    .about_panner {
+        height: 80vh !important;
+        margin-top: 0px;
+    }
+    .about_page {
+        height: auto;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .about_page_card h1 {
+        font-size: 28px;
+    }
+    .about_page_card span {
+        font-size: 26px;
+        padding-bottom: 25px;
+    }
+    .about_page_card p {
+        font-size: 15px !important;
+        text-align: left;
+        line-height: 26px;
+    }
+    .about_page_card {
+        gap: 0;
+    }
+    .what_we_offer {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .what_we_offer_inner h1 {
+        font-size: 34px;
+    }
+    .what_we_offer_inner_row_box {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .what_we_offer_inner_row_box_card {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .what_we_offer_inner_row_box_card h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .call_us {
+        height: 50vh;
+    }
+    .call_us_inner_box h1 {
+        font-size: 34px;
+    }
+    .call_us_inner_box a {
+        font-size: 24px;
+    }
+    .footer_section {
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .footer_section_inner_row_box {
+        padding-top: 40px;
+    }
+    .footer_section_inner_row_box_card ul {
+        padding-top: 0px;
+        text-align: left;
+    }
+    .footer_section_inner_row_box_card ul li {
+        list-style: none;
+        margin-bottom: 10px;
+    }
+    .footer_section_inner_row_box_card p {
+        font-size: 16px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .footer_section_inner_row_box_card h1 {
+        font-size: 22px;
+        height: 40px;
+    }
+    .package_img img {
+        height: 400px;
+    }
+    .home_panner h1 {
+        font-size: 26px;
+    }
+    .home_panner a {
+        font-size: 18px;
+    }
+    .about_page_card h1 {
+        font-size: 26px !important;
+    }
+    .tour_packages {
+        height: auto;
+    }
+    .tour_packages_inner_row_box {
+        flex-direction: column;
+    }
+    .tour_packages_inner_row_box_left {
+        width: 100% !important;
+        height: 350px !important;
+    }
+    .tour_packages_inner_row_box_right {
+        width: 100% !important;
+        padding: 0px !important;
+        height: 350px !important;
+        align-items: center !important;
+    }
+    .tour_packages_inner_row_box_right p {
+        text-align: center;
+    }
+    .contact_page {
+        height: auto;
+    }
+    .package_text_page h1 {
+        padding-bottom: 30px;
+    }
+    .tour_packages_inner_row_box_right {
+        height: auto !important;
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+    .tour_packages_inner_row_box_right {
+        gap: 5px !important;
+    }
+    .tour_packages_inner_row_box_right h1 {
+        font-size: 22px !important;
+    }
+    .contact_page_inner h1 {
+        font-size: 26px;
+    }
+}
